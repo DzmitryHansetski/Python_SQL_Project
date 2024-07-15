@@ -1,0 +1,1 @@
+The Python_SQL_Project test project provides an example of solving the problem of creating an Sqlite database in the PyCharm development environment and performing the required calculations according to the conditions of the task. The description and conditions of the task are presented in the file .task_condition of the test project.
