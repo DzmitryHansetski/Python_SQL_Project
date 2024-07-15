@@ -1,0 +1,51 @@
+A task.
+Create an SQLite database.
+There are 3 (three) tables in it - EMP, CLIENTS, SALES.
+The structure of the tables is as follows:
+    - the EMP table should contain information about employees in the main columns:
+        ROW_ID - identifier (identification number) employee;
+        F_NAME - the employee's name;
+        L_NAME is the last name of the employee;
+    - the CLIENTS table should contain information about organizations owned and managed by
+    employees specified in the EMP table (employees from the EMP table) and should contain
+    the following structure:
+        ROW_ID - the identifier (identification number) of the organization;
+        NAME - the name of the organization;
+        EMP_ID - ROW_ID identifier (identification number) an employee from the EMP table, for example 2;
+    - the SALES table should contain information about the sale of goods by organizations
+    from the CLIENTS table and should contain the following structure:
+        DATE - the date of sale of goods in numeric format, for example, 10/19/2024;
+        AMOUNT - the quantity of the product for one sale (one order) on a certain date, for example 38;
+        CLIENTS_ID - ROW_ID identifier (identification number) of the organization from the CLIENTS table;
+        STATUS - the result of payment for the product, the status is "Paid" or "Awaiting payment"
+        (at your discretion).
+Necessary:
+    1. Display all data on employees with the largest sales of goods in one sale.
+    2. Print the name of the organization with the least number of orders for all time.
+    3. Display the total number of orders for the month, broken down by status.
+    4. Calculate the total number of paid (with the status "Paid") units of goods since the beginning of the year.
+
+Задача.
+Создайте базу данных SQLite.
+В ней 3 (три) таблицы - EMP, CLIENTS, SALES.
+Структура таблиц следующая:
+    - таблица EMP должна содержать информацию о сотрудниках в основных столбцах:
+       ROW_ID - идентификатор (идентификационный номер) сотрудника;
+       F_NAME - имя сотрудника;
+       L_NAME - фамилия сотрудника;
+    - таблица CLIENTS должна содержать информацию об организациях, которыми владеют и управляют сотрудники
+    указанные в таблице EMP (сотрудники из таблицы EMP) и должна содержать следующую структуру:
+       ROW_ID - идентификатор (идентификационный номер) организации;
+       NAME - наименование организации;
+       EMP_ID - идентификатор ROW_ID (идентификационный номер) сотрудника из таблицы EMP, например 2;
+    - таблица SALES должна содержать информацию о реализации продажи товаров организациями из таблицы CLIENTS
+    и должна содержать следующую структуру:
+       DATE - дата реализации товара в числовом формате, например 19.10.2024;
+       AMOUNT - количество товара за одну продажу (один заказ) в определенную дату DATE, например 38;
+       CLIENTS_ID - идентификатор ROW_ID (идентификационный номер) организации из таблицы CLIENTS;
+       STATUS - результат оплаты товара, статус "Оплачено" или "Ожидает оплаты" (на свое усмотрение).
+Необходимо:
+    1. Вывести все данные по сотрудникам с наибольшей реализацией товара за одну продажу.
+    2. Вывести наименование организации с наименьшим количеством заказов за все время.
+    3. Вывести общее количество заказов за месяц в разбивке по статусу.
+    4. Подсчитать общее количество оплаченных (имеющих статус "Оплачено") единиц товара с начала года.
